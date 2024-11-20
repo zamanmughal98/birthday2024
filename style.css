@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url('./assets/background.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.content {
+  justify-content: center;
+  align-items: center;
+}
+
+.paper {
+  background-image: url('./assets/paper.jpg');
+  filter: brightness(80%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px 100px;
+  transform: rotateZ(-5deg);
+  box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
+
+.paper.heart {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.paper.image {
+  padding: 10px;
+}
+.paper.image p {
+  font-size: 30px;
+}
+
+img {
+  max-height: 200px;
+  width: 100%;
+  user-select: none;
+  filter: brightness(100%) !important;
+}
+
+.paper.heart::after {
+  content: '';
+  background-image: url('./assets/heart.webp');
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: 150px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+p {
+  font-family: 'Zeyada';
+  font-size: 2rem;
+  color: rgb(0, 0, 100);
+  opacity: 0.75;
+  user-select: none;
+}
