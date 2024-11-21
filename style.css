@@ -14,10 +14,10 @@ body {
   align-items: center;
   justify-content: center;
 
-  background-image: url('./assets/background.jpg');
+  background-image: url('./assets/background.webp');
   background-position: center center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   overflow: hidden;
 }
 
@@ -28,12 +28,14 @@ body {
 }
 
 .paper {
-  background: #c8ea9ee9;
+  background: #c8ea9eed;
   padding: 1.25rem 5rem;
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 30px 10px rgba(0, 0, 0, 0.5);
   position: absolute;
   border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
+  max-width: 50%;
+  place-items: center;
 }
 
 .paper.heart {
@@ -42,10 +44,12 @@ body {
   height: 12.5rem;
   padding: 0;
   border-radius: 50%;
+  max-width: 100%;
 }
 
 .paper.image {
   padding: 1rem;
+  max-width: 70%;
 }
 .paper.image p {
   font-size: 2rem;
@@ -80,4 +84,5 @@ p {
   opacity: 0.75;
   user-select: none;
   text-align: center;
+  padding: 0 20px;
 }
