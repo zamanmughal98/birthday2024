@@ -22,42 +22,41 @@ body {
 }
 
 .content {
+  display: none;
   justify-content: center;
   align-items: center;
 }
 
 .paper {
-  background-image: url('./assets/paper.jpg');
-  filter: brightness(80%);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  padding: 20px 100px;
+  background: #c8ea9ee9;
+  padding: 1.25rem 5rem;
   transform: rotateZ(-5deg);
-  box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 15px 30px 10px rgba(0, 0, 0, 0.5);
   position: absolute;
+  border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
 }
 
 .paper.heart {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 12.5rem;
   padding: 0;
   border-radius: 50%;
 }
 
 .paper.image {
-  padding: 10px;
+  padding: 1rem;
 }
 .paper.image p {
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 img {
-  max-height: 200px;
+  max-height: 12.5rem;
   width: 100%;
   user-select: none;
   filter: brightness(100%) !important;
+  border-radius: 1.25rem;
 }
 
 .paper.heart::after {
@@ -68,7 +67,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-size: 150px;
+  background-size: 9.5rem;
   background-position: center center;
   background-repeat: no-repeat;
   opacity: 0.6;
@@ -80,4 +79,5 @@ p {
   color: rgb(0, 0, 100);
   opacity: 0.75;
   user-select: none;
+  text-align: center;
 }
