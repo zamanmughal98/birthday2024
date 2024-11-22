@@ -25,17 +25,19 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .paper {
-  background: #c8ea9eed;
+  background: rgba(200, 234, 158, 0.95);
   padding: 1.25rem 5rem;
   transform: rotateZ(-5deg);
   box-shadow: 1px 15px 30px 10px rgba(0, 0, 0, 0.5);
   position: absolute;
   border-radius: 50% 10% 50% 10% / 10% 50% 10% 50%;
   max-width: 50%;
-  place-items: center;
+  min-height: 50%;
+  place-content: center;
 }
 
 .paper.heart {
@@ -57,10 +59,13 @@ body {
 
 img {
   max-height: 12.5rem;
-  width: 100%;
+  max-width: 60%;
   user-select: none;
   filter: brightness(100%) !important;
   border-radius: 1.25rem;
+
+  display: grid;
+  place-self: center;
 }
 
 .paper.heart::after {
